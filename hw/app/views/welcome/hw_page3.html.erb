@@ -1,0 +1,55 @@
+<div class=title>회귀분석</div>
+    <ol>
+      <li>회귀분석이란?</li>
+      <img src=<%=asset_path 'image003.jpg'%>>
+      <p>  변수들간의 함수적인 관련성을 규명하기 위하여 어떤 <span class=important>수학적 모형을 가정</span>하고, 이 모형을 측정된 변수들의 자료로부터 추정하는 통계적 분석방법 <br>
+        추정된 모형을 사용하여 필요한 예측을 하거나 관심있는 통계적 추정과 검정을 실시함</p>
+
+      <li>회귀분석의 목적</li>
+        <p>
+          설명변수와 반응변수의 관계를 구체적인 함수 형태로 나타내고, 설명변수의 값으로부
+          터 반응변수의 값을 예측하는 것으로 두 변수 사이의 함수관계를 분석.<br>
+          <div class = content_list>
+          <em>x</em> 를 설명변수(explanatory variable) 또는 독립변수(independent variable)<br>
+          <em>y</em> 를 반응변수(response variable) 또는 종속변수(dependent variable)<br>
+          </div>
+          <span class=not_important>(예 : 지능지수와 학업성적, 흡연량과 수명, 공정온도와 제품의 강도, 초등학교 아동들의 학년에
+          따른 평균신장의 변화 등...)<br></span>
+        </p>
+      <li>사용년수에 따른 중고차 가격자료를 이용하여 단순회귀직선을 추정하기</li>
+      <div class=table_title>사용년수에 따른 중고차 가격자료</div>
+        <table class="table">
+          <tr class="info">
+              <td>사용년수</td>
+              <td>1.0</td>
+              <td>1.5</td>
+              <td>2.0</td>
+              <td>2.0</td>
+              <td>3.0</td>
+              <td>3.0</td>
+              <td>3.2</td>
+              <td>4.0</td>
+              <td>4.5</td>
+              <td>5.0</td>
+              <td>5.0</td>
+              <td>5.5</td>
+          </tr>
+          <tr>
+            <td>중고차가격</td>
+            <td>4.5</td>
+            <td>4.0</td>
+            <td>3.2</td>
+            <td>3.4</td>
+            <td>2.5</td>
+            <td>2.3</td>
+            <td>2.3</td>
+            <td>1.6</td>
+            <td>1.5</td>
+            <td>1.0</td>
+            <td>0.8</td>
+            <td>0.4</td>
+          </tr>
+            </table>
+            <div class=image_title>사용년수에 따른 중고차 가격 산점도</div>
+            <img src=<%=asset_path 'image002.jpg'%>>
+    </ol>
